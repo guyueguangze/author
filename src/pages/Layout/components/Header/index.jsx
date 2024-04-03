@@ -35,11 +35,11 @@ export default function Header({ menus }) {
               <Col className="logo_content" lg={4} md={5} sm={24} xs={24}>
                 <li className="logo">
                   <Link to="/home">
-                    <img className="logo" src={logo} alt="" />
+                    {/* <img className="logo" src={logo} alt="" /> */}
                   </Link>
                 </li>
                 <Link to="/home">
-                  <li className="myname">Taiyuan</li>
+                  <li className="myname"></li>
                 </Link>
               </Col>
               <Col className="menuContent" lg={20} md={19} sm={0} xs={0}>
