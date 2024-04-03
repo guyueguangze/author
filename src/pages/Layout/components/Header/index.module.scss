@@ -1,0 +1,113 @@
+.root {
+  :global {
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+    }
+
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    .menu_content {
+      height: 70px;
+      width: 100%;
+      // padding: 0 48px;
+      background-color: #fff;
+      // border-bottom: 1px solid #dcd9d9;
+      // background-color: #f0f0f0;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      left: 50%;
+      transform: translate(-50%, 0);
+      z-index: 999;
+      // .ant-col-15 {
+      //   display: flex;
+      //   align-items: center;
+      //   justify-content: space-between;
+      // }
+
+      .headerContent {
+        height: 100%;
+        width: 100%;
+        // min-width: 654px;
+        .logo_content {
+          display: flex;
+          align-items: center;
+          .logo {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+          }
+          .myname {
+            font-size: 18px;
+            font-weight: 900;
+            // color: rgb(0, 63, 136);
+            // color: #fff;
+            padding-right: 20px;
+            // font-family: Lato;
+          }
+          li {
+            font-family: PingFang-SC-Bold !important;
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+        .menuContent {
+          // height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: left;
+          @media screen and (max-width: 1102px) {
+            visibility: hidden;
+          }
+          li {
+            font-family: PingFang-SC-Regular !important;
+            font-size: 16px;
+            line-height: 24px;
+          }
+          .menu_item {
+            color: #000;
+            font-family: PingFang-SC-Medium;
+            padding: 10px;
+            font-weight: 900;
+            font-size: 16px;
+            // border-bottom: 3px solid #031329;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            .path_active {
+              width: 34px;
+              height: 2px;
+              background-color: #000;
+              visibility: hidden;
+              margin-top: 5px;
+            }
+            .path_active_show {
+              display: block;
+              width: 34px;
+              height: 2px;
+              background-color: #000;
+              margin-top: 5px;
+            }
+            &:hover {
+              .active {
+                width: 34px;
+                height: 2px;
+                background-color: #000;
+                visibility: visible;
+                margin-top: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

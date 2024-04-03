@@ -1,0 +1,105 @@
+@import '../../styles/default';
+
+.root {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+
+  :global {
+    height: 100%;
+    width: 100%;
+    // background-color: #313132;
+    color: #fff;
+
+    .footer_content {
+      .footer_menu {
+        width: 100%;
+        .logo_content {
+          display: flex;
+          align-items: center;
+          .logo {
+            width: 60px;
+            height: 60px;
+            margin-right: 10px;
+          }
+          .logo_name {
+            font-size: 18px;
+            font-weight: 900;
+            color: #fff;
+
+            font-family: PingFang-SC-Bold;
+            font-style: italic;
+          }
+        }
+        .footer_Link {
+          height: 34px;
+          min-width: 76px;
+
+          .footer_Link_title {
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+            font-weight: bold;
+            font-size: 24px;
+            text-align: left;
+            font-family: PingFang-SC-Bold;
+            color: #fff;
+            color: #fff;
+          }
+          p {
+            font-weight: 500;
+            font-size: 18px;
+            text-align: left;
+            font-family: PingFang-SC-Medium;
+            color: #fff;
+            line-height: 30px;
+            a {
+              color: #fff;
+            }
+          }
+        }
+
+        ul {
+          flex: 1;
+          text-align: center;
+          .footer_menu_title {
+            span {
+              height: 34px;
+              min-width: 76px;
+              font-size: 19px;
+              text-align: center;
+              display: inline-block;
+              border-bottom: 1px solid #a09d9d;
+            }
+          }
+          li {
+            margin-top: 10px;
+            a {
+              text-decoration: none;
+              color: #fff;
+            }
+            a:hover {
+              color: #fff;
+            }
+          }
+        }
+        .footer_phone {
+          flex: 1;
+        }
+      }
+      .footer_ban_quan {
+        display: block;
+        height: 20px;
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .bottom-bar {
+      border-top: 1px solid hsla(0, 0%, 100%, 0.25);
+      text-align: right;
+      padding: 16px $padding-space;
+      margin: 0;
+      line-height: 32px;
+      background-color: #333333 !important;
+    }
+  }
+}

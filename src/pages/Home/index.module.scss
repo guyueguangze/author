@@ -1,0 +1,124 @@
+.root {
+  :global {
+    .container {
+      margin-top: 50px;
+      .intorduce {
+        .avatar_content {
+          display: flex;
+          flex-direction: column;
+          .name {
+            width: 268px;
+            font-size: 24px;
+            font-weight: 300;
+            color: #000;
+            margin: 20px 0 10px;
+            text-align: center;
+          }
+          .school {
+            width: 268px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 300;
+            color: #000;
+            margin: 0 0 10px;
+          }
+        }
+        .intorduce_content {
+          font-family: 'PingFang-SC-Regular';
+          font-size: 18px;
+          line-height: 30px;
+          .downLowd {
+            margin-top: 50px;
+          }
+        }
+      }
+
+      .interests_education {
+        margin-top: 300px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .title {
+          font-size: 24px;
+          line-height: 30px;
+          font-family: 'PingFang-SC-Bold';
+        }
+        .content {
+          margin-top: 10px;
+          .item {
+            font-size: 18px;
+            line-height: 30px;
+            font-family: 'PingFang-SC-Regular';
+          }
+          .interests_item::before {
+            content: '\2022';
+            margin-right: 0.5em;
+          }
+        }
+      }
+      .research {
+        margin-top: 30px;
+        .research_content {
+          margin-top: 30px;
+          .research_little_title {
+            font-size: 18px;
+            font-family: 'PingFang-SC-Bold';
+            margin-bottom: 10px;
+            margin-top: 10px;
+          }
+          .research_item {
+            line-height: 30px;
+            .weight_title {
+              white-space: nowrap;
+              margin-right: 5px;
+              font-size: 16px;
+              font-family: 'PingFang-SC-Bold';
+            }
+            .content {
+              font-family: 'PingFang-SC-Regular';
+            }
+          }
+        }
+      }
+      .publication {
+        margin-top: 30px;
+        .publication_content {
+          margin-top: 10px;
+          .publication_item {
+            .title {
+              font-family: 'PingFang-SC-Regular';
+              font-size: 16px;
+              line-height: 30px;
+            }
+          }
+        }
+      }
+      .award {
+        .award_content {
+          margin-top: 10px;
+          .award_item {
+            font-size: 18px;
+            line-height: 30px;
+            font-family: 'PingFang-SC-Regular';
+          }
+        }
+      }
+      .project {
+        .project_content {
+          margin-top: 10px;
+          .project_item {
+            font-size: 18px;
+            line-height: 30px;
+            font-family: 'PingFang-SC-Regular';
+            a {
+              color: #000;
+              &:hover {
+                font-weight: 800;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
